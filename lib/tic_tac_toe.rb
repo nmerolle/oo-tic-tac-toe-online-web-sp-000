@@ -87,9 +87,9 @@ WIN_COMBINATIONS = [
   !(won?) && (full?)
   end
 
-def over?
-  won? || full? || draw?
-end
+  def over?
+    won? || full? || draw?
+  end
 
   def winner
     WIN_COMBINATIONS.detect do |win_combo|
@@ -117,4 +117,4 @@ def play
   end
 end
 
-end
+
