@@ -107,15 +107,15 @@ WIN_COMBINATIONS = [
 
 
 def play
-  while !over?
+  while over? == false
     turn
   end
   if won?
-    @winner = winner 
-    puts 'Congratulations ' + @winner + "!"
+    puts "Congratulations #{winner}!"
   elsif draw?
     puts "Cat's Game!"
   end
+end
 end
 
 
